@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pf-reader-v1';
+const CACHE_NAME = 'pf-reader-v2';
 const ASSETS = [
   './',
   './index.html',
