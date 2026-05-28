@@ -1,0 +1,8 @@
+node_modules/
+server.js
+build.js
+gen-icons.js
+package.json
+package-lock.json
+screenshot.png
+*.zip
