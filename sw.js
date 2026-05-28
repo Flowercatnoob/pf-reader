@@ -28,8 +28,9 @@ self.addEventListener('activate', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
-  // Only handle GET
+  // Only handle GET and http/https
   if (e.request.method !== 'GET') return;
+  if (!e.request.url.startsWith('http')) return;
 
   // For page content and navigation, network-first then cache
   if (e.request.url.includes('/pages/')) {
